@@ -20,13 +20,13 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV["POSTGRES_USERNAME"] %>
-  password: <%= ENV["POSTGRES_PASSWORD"] %>
-  port: 5433
 
 development:
   <<: *default
   database: search_analytics_development
+  username: <%= ENV["POSTGRES_USERNAME"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  port: 5433
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -84,6 +84,4 @@ test:
 #
 production:
   <<: *default
-  database: search_analytics_production
-  username: search_analytics
-  password: <%= ENV["SEARCH_ANALYTICS_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
