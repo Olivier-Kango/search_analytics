@@ -14,7 +14,7 @@ class AnalyticsController < ApplicationController
         end
 
         time_diff = search.created_at - current_sequence.last.created_at
-        is_continuation = search.query.start_with?(current_sequence.last.query) && time_diff <= 8
+        is_continuation = search.query.start_with?(current_sequence.last.query) && time_diff <= 60
 
         if is_continuation
           current_sequence << search
