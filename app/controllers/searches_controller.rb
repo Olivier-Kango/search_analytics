@@ -5,20 +5,8 @@ class SearchesController < ApplicationController
 
     return head :bad_request if query.blank? || query.length < 3
 
-    last = Search.where(ip_address: ip).order(updated_at: :desc).first
-
-    if last && recent?(last) && query.start_with?(last.query)
-      last.update(query: query)
-    else
-      Search.create(query: query, ip_address: ip)
-    end
+    Search.create(query: query, ip_address: ip)
 
     head :ok
-  end
-
-  private
-
-  def recent?(search)
-    Time.current - search.updated_at <= 5.seconds
   end
 end
