@@ -45,13 +45,13 @@ function renderAnalytics(data) {
     analyticsList.innerHTML = '<li class="text-gray-500">No searches recorded at the moment</li>';
     return;
   }
-  for (const [query, count] of Object.entries(data)) {
+  for (const [query] of Object.entries(data)) {
     const li = document.createElement('li');
-    li.textContent = `${query} (${count})`;
+    li.textContent = `${query}`;
     li.className = 'p-2 bg-white rounded shadow hover:bg-gray-50';
     analyticsList.appendChild(li);
   }
 }
 
 fetchAnalytics();
-setInterval(fetchAnalytics, 5000);
+setInterval(fetchAnalytics, 2000);
