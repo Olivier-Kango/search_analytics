@@ -38,6 +38,7 @@ gem "rack-cors"
 
 # For .env (environment variables)
 gem "dotenv-rails"
+gem 'concurrent-ruby', '1.3.4' 
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
