@@ -26,9 +26,14 @@ class AnalyticsController < ApplicationController
       final_queries << current_sequence.last.query unless current_sequence.empty?
     end
 
+    final_queries.uniq!
+
+    final_queries.reject! do |query|
+      final_queries.any? { |q| q != query && q.start_with?(query) }
+    end
+
     top_searches = final_queries.each_with_object(Hash.new(0)) { |q, h| h[q] += 1 }
                                .sort_by { |_, v| -v }
-                               .first(10)
                                .to_h
 
     render json: top_searches
