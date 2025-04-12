@@ -39,7 +39,7 @@
 
 >  This app tracks real-time user search input to generate analytics and trends on what people are searching for — it's not about search results, but the search behavior itself.
 
-**This Realtime Search Box** Logs every keystroke instantly, Cleans up and summarizes input to avoid duplicates (e.g., "dev" → "developer"), Cleans up and summarizes input to avoid duplicates (e.g., "dev" → "developer"), Bonus: RSpec testing support.
+**This Realtime Search Box** Logs every keystroke instantly, Cleans up and summarizes input to avoid duplicates (e.g., "dev" → "developer"), Bonus: RSpec testing support.
 
 ## 🛠 Built With <a id="built-with"></a>
 
