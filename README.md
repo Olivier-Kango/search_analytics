@@ -147,8 +147,10 @@ To deploy this project I used :
 👤 **Olivier Kango**
 
 - GitHub: [@github-olivier](https://github.com/Olivier-Kango)
+- GitLab: [@gitlab-olivier](https://gitlab.com/olivierkango)
+- OpenHub: [@openhub-olivier](https://openhub.net/accounts/Olivier-Kango)
 - Twitter: [@twitter-olivier](https://twitter.com/olivierkango1)
-- LinkedIn: [@linkedIn-olivier](https://www.linkedin.com/in/olivier-kango-b990601b8/)
+- LinkedIn: [@linkedIn-olivier](https://www.linkedin.com/in/olivier-kango/)
 - Angelist: [@angelist-olivier](https://angel.co/u/kango-olivier)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
