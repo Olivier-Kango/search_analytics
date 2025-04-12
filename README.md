@@ -133,7 +133,7 @@ To run tests, run the following command:
 
 To deploy this project I used :
 
-- [HEROKU](https://dashboard.heroku.com/apps/juice-search-olivier)
+- [Heroku](https://dashboard.heroku.com/apps/juice-search-olivier)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
